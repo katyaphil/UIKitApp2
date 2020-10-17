@@ -28,7 +28,7 @@
                                             <segment title="Second"/>
                                         </segments>
                                         <connections>
-                                            <action selector="segmentedControlAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="3bd-Gh-yxA"/>
+                                            <action selector="segmentAction" destination="BYZ-38-t0r" eventType="valueChanged" id="Qzz-Yi-afA"/>
                                         </connections>
                                     </segmentedControl>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="00M-1N-Mrd">
@@ -40,7 +40,7 @@
                                     <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="gPP-FJ-gdD">
                                         <rect key="frame" x="-2" y="128.5" width="386" height="31"/>
                                         <connections>
-                                            <action selector="sliderAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="01v-bR-yIx"/>
+                                            <action selector="sliderAction" destination="BYZ-38-t0r" eventType="valueChanged" id="kD4-mh-O1W"/>
                                         </connections>
                                     </slider>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="enter your name" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="hD3-IX-UDx" userLabel="Text Field">
@@ -57,7 +57,7 @@
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
-                                            <action selector="doneButtonPressed" destination="BYZ-38-t0r" eventType="touchUpInside" id="k8U-8f-k0f"/>
+                                            <action selector="buttonAction" destination="BYZ-38-t0r" eventType="touchUpInside" id="lfp-5o-zN6"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -72,9 +72,10 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outlet property="segmentedControl" destination="LpV-70-x8l" id="MOY-BA-WhW"/>
-                        <outlet property="slider" destination="gPP-FJ-gdD" id="IVp-Kg-PKZ"/>
-                        <outlet property="textFielf" destination="hD3-IX-UDx" id="Fgv-tR-64x"/>
+                        <outlet property="mLabel" destination="00M-1N-Mrd" id="6Rt-TS-kAh"/>
+                        <outlet property="mSegment" destination="LpV-70-x8l" id="Pfr-dJ-pwz"/>
+                        <outlet property="slider" destination="gPP-FJ-gdD" id="SAL-JJ-L4j"/>
+                        <outlet property="textField" destination="hD3-IX-UDx" id="xOI-QU-Y5A"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

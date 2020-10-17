@@ -22,18 +22,18 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
       
-  //      mLable?.font = mLable.font.withSize(35)
-//        mLable?.textAlignment = .center
- //       mLable?.numberOfLines = 2
+        mLabel?.font = mLabel.font.withSize(35)
+        mLabel?.textAlignment = .center
+        mLabel?.numberOfLines = 2
         
-//        segmentedControl?.insertSegment(withTitle: "Third", at: 2, animated: false)
-//        slider.value = 1
-//        slider.maximumValue = 0
-//        slider.maximumValue = 1
-//        slider.minimumTrackTintColor = .yellow
-//        slider.maximumTrackTintColor = .red
-//        slider.thumbTintColor = .blue
-//          mainLable?.text = String(slider.value)
+        mSegment?.insertSegment(withTitle: "Third", at: 2, animated: false)
+        slider.value = 1
+        slider.maximumValue = 0
+        slider.maximumValue = 1
+        slider.minimumTrackTintColor = .yellow
+        slider.maximumTrackTintColor = .red
+        slider.thumbTintColor = .blue
+        mLabel?.text = String(slider.value)
     }
     
     @IBAction func segmentAction() {
@@ -69,16 +69,6 @@ class ViewController: UIViewController {
     }
     
 
-//    @IBAction func doneButtonPressed() {
-//        guard let inputText = textField.text, !inputText.isEmpty else {
-//            print("Text field is empty")
-//            return
-//        }
-//        if let number = Double(inputText) {
-//            print("Wrong format")
-//            return
-//        }
-//        mainLable.text = inputText
-//    }
+
 }
 
